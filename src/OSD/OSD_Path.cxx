@@ -522,7 +522,6 @@ static Standard_Boolean Analyse_UNIX(const TCollection_AsciiString& /*name*/)
 Standard_Boolean OSD_Path::IsValid(const TCollection_AsciiString& aDependentName,
                                    const OSD_SysType aSysType)const{
  if (aDependentName.Length()==0) return(Standard_True);
- if (!aDependentName.IsAscii()) return(Standard_False);
 
  OSD_SysType provSys;
  if (aSysType == OSD_Default) provSys = SysDep;
